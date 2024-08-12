@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import ProjectCard from './ProjectCards';
 import Particle from '../Particle';
 import sws from '../../Assets/Projects/sws.png';
-import emotion from '../../Assets/Projects/emotion.png';
 import sirius from '../../Assets/Projects/sirius.png';
 import formLk from '../../Assets/Projects/form_lk3.jpg';
 import lumina from '../../Assets/Projects/lumina.png';
