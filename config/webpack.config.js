@@ -319,7 +319,11 @@ module.exports = function (webpackEnv) {
         },
         {
           test: /\.css$/,
-          use: getStyleLoaders({ importLoaders: 1 }),
+          use: [
+            isEnvDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+            'css-loader',
+            'postcss-loader',
+          ],
         },
         {
           // "oneOf" will traverse all following loaders until one will
